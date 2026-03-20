@@ -57,7 +57,7 @@ Stores intermediate data during instruction execution.
 
 Controls instruction execution and generates control signals.
 
-![Control Unit](images/control_unit.png)
+![Control Unit](images/controll_unit.png)
 
 ---
 
