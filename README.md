@@ -31,7 +31,7 @@ This project is designed for **students, beginners, and hardware enthusiasts** w
 
 ## Full CPU Circuit
 
-![CPU Architecture](images/full-cpu.png)
+![CPU Architecture](images/cpu.png)
 
 ---
 
@@ -41,7 +41,7 @@ This project is designed for **students, beginners, and hardware enthusiasts** w
 
 Tracks the address of the next instruction.
 
-![Program Counter](images/program-counter.png)
+![Program Counter](images/program_counter.png)
 
 ---
 
@@ -49,7 +49,7 @@ Tracks the address of the next instruction.
 
 Stores intermediate data during instruction execution.
 
-![Registers](images/register-block.png)
+![Registers](images/register.png)
 
 ---
 
@@ -57,7 +57,7 @@ Stores intermediate data during instruction execution.
 
 Controls instruction execution and generates control signals.
 
-![Control Unit](images/control-unit.png)
+![Control Unit](images/control_unit.png)
 
 ---
 
@@ -65,7 +65,7 @@ Controls instruction execution and generates control signals.
 
 Allows interaction with external input/output using memory addresses.
 
-![Memory Mapped IO](images/memory-io.png)
+![Memory Mapped IO](images/memo_io.png)
 
 ---
 
@@ -73,7 +73,7 @@ Allows interaction with external input/output using memory addresses.
 
 Performs arithmetic and logical operations.
 
-![ALU](images/alu.png)
+![ALU](images/ALU.png)
 
 ---
 
@@ -138,7 +138,7 @@ Anyone can download and run this project using Git.
 ### Clone the repository
 
 ```
-git clone https://github.com/YOUR-USERNAME/32-bit-cpu-logisim.git
+git clone https://github.com/shrejan/32-bit-cpu-logisim.git
 ```
 
 ### Move into the project folder
@@ -217,7 +217,7 @@ This project helps understand:
 
 # 👨‍💻 Author
 
-**Kotyan**
+**Shrejan Kotyan**
 
 Creator of this 32-bit CPU project.
 
