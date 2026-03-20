@@ -48,9 +48,9 @@ Used for register-to-register operations.
 
 ## Format
 
-| OPCODE | RS | RT | RD | SHAMT | FUNCT |
-|-------|----|----|----|------|-------|
-| 6 bit | 5  | 5  | 5  | 5    | 6 bit |
+| OPCODE | FUNCT | RD | RT | RS | SHAMT |
+|-------|--------|----|----|----|-------|
+| 6 bit | 6 bit  | 5  | 5  | 5  |   5   |
 
 ## Field Description
 
