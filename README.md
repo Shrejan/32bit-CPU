@@ -1,6 +1,6 @@
 # 🖥️ 32-Bit CPU Architecture in Logisim
 
-![Project Banner](images/cpu-banner.png)
+![Project Banner](images/32bit_computer.png)
 
 A **fully modular 32-bit CPU design** built using **Logisim**, demonstrating how a processor works internally using fundamental computer architecture components such as:
 
