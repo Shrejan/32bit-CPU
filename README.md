@@ -93,8 +93,7 @@ Performs arithmetic and logical operations.
 │   ├── memory-io.png
 │   └── alu.png
 │
-└── docs/
-    └── instruction-set.md
+└── Docs.md
 ```
 
 ---
