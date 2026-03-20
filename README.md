@@ -138,14 +138,10 @@ Anyone can download and run this project using Git.
 ### Clone the repository
 
 ```
-git clone https://github.com/shrejan/32-bit-cpu-logisim.git
+git clone https://github.com/Shrejan/32bit-CPU.git
 ```
 
 ### Move into the project folder
-
-```
-cd 32-bit-cpu-logisim
-```
 
 Then open:
 
@@ -234,7 +230,6 @@ Focused on:
 If you like this project:
 
 ⭐ Star the repository
-🍴 Fork the project
 🛠 Improve the design
 📢 Share with others
 
