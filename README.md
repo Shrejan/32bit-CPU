@@ -152,7 +152,7 @@ in Logisim.
 
 ---
 
-# 🌍 Alternative Download Method
+# Alternative Download Method
 
 If you don't use Git:
 
