@@ -443,6 +443,7 @@ This example shows how the CPU handles:
 • Branching logic  
 • Jump instructions  
 • Infinite loop execution
+
 # 🚀 Future Improvements
 
 Possible upgrades for this CPU:
