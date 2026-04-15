@@ -103,6 +103,7 @@ Performs arithmetic and logical operations.
 To run this project you need:
 
 * Logisim or Logisim Evolution
+* java environment 
 * Basic knowledge of CPU architecture (optional but helpful)
 
 ---
