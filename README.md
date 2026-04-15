@@ -119,6 +119,7 @@ Open **Logisim**.
 Step 3
 Open the main circuit file:
 
+
 ```
 cpu.circ
 ```
