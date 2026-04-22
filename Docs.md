@@ -133,6 +133,7 @@ This CPU uses memory-mapped addresses for keyboard input and ASCII display.
 ## Keyboard Input
 
 Instruction:
+
 IN RT
 
 Operation:
