@@ -221,19 +221,15 @@ Example Program
 ---
 
 # Instruction 1
-
 Machine Code
 ```
 00000000
 ```
-
 Binary Representation
 ```
 000000 00000 00000 00000 00000 000000
 ```
-
 Decoded Fields
-
 | Field | Value | Description |
 |------|------|-------------|
 | Opcode | 000000 | NOP / Start Instruction |
@@ -249,167 +245,132 @@ Start execution from address 0.
 ---
 
 # Instruction 2
-
 Machine Code
 ```
-20250000
+20220000
 ```
-
 Binary Representation
 ```
-001000 00001 00101 0000000000000000
+001000 00001 00010 0000000000000000
 ```
-
 Decoded Fields
-
 | Field | Value | Description |
 |------|------|-------------|
 | Opcode | 001000 | LOAD Instruction |
 | RS | 00001 | Source Register |
-| RT | 00101 | Destination Register |
+| RT | 00010 | Destination Register |
 | Immediate | 0000 | Offset |
 
 Operation
-
 ```
-R1 ← MEM[R5]
+R1 ← MEM[R2]
 ```
-
 Description
-
 Continuously loads the keyboard status value from the memory-mapped address
-stored in **Register 5 (FFFFF1)**.
+stored in **Register 2 (FFFFF1)**.
 
 ---
 
 # Instruction 3
-
 Machine Code
 ```
-0C220000
+0C230000
 ```
-
 Binary Representation
 ```
-000011 00001 00010 0000000000000000
+000011 00001 00011 0000000000000000
 ```
-
 Decoded Fields
-
 | Field | Value | Description |
 |------|------|-------------|
 | Opcode | 000011 | Branch Instruction |
 | RS | 00001 | Register 1 |
-| RT | 00010 | Register 2 |
+| RT | 00011 | Register 3 |
 | Immediate | 0000 | Branch Target |
 
 Operation
-
 ```
-IF (R1 == R2) CONTINUE
+IF (R1 == R3) CONTINUE
 ELSE JUMP TO 00000000
-//where R2=00001
+//where R3=00001
 ```
-
 Description
-
 Checks whether a key has been pressed.
 
 ---
 
 # Instruction 4
-
 Machine Code
 ```
-20260000
+20240000
 ```
-
 Binary Representation
 ```
-001000 00001 00110 0000000000000000
+001000 00001 00100 0000000000000000
 ```
-
 Decoded Fields
-
 | Field | Value | Description |
 |------|------|-------------|
 | Opcode | 001000 | LOAD |
 | RS | 00001 | Base Register |
-| RT | 00110 | Target Register |
+| RT | 00100 | Target Register |
 | Immediate | 0000 | Offset |
 
 Operation
-
 ```
-R6 ← MEM[FFFFF0]
+R4 ← MEM[FFFFF0]
 ```
-
 Description
-
 Loads ASCII value of the pressed key.
 
 ---
 
 # Instruction 5
-
 Machine Code
 ```
-24270000
+24250000
 ```
-
 Binary Representation
 ```
-001001 00001 00111 0000000000000000
+001001 00001 00101 0000000000000000
 ```
-
 Decoded Fields
-
 | Field | Value | Description |
 |------|------|-------------|
 | Opcode | 001001 | STORE |
 | RS | 00001 | Source Register |
-| RT | 00111 | Address Register |
+| RT | 00101 | Address Register |
 | Immediate | 0000 | Offset |
 
 Operation
-
 ```
 MEM[FFFFF2] ← ASCII VALUE
 ```
-
 Description
-
 Writes the ASCII value to the display.
 
 ---
 
 # Instruction 6
-
 Machine Code
 ```
 28000000
 ```
-
 Binary Representation
 ```
 001010 00000000000000000000000000
 ```
-
 Decoded Fields
-
 | Field | Value | Description |
 |------|------|-------------|
 | Opcode | 001010 | JUMP |
 | Address | 00000000 | Jump Target |
 
 Operation
-
 ```
 PC ← 00000000
 ```
-
 Description
-
 Creates an infinite loop.
 
 ---
