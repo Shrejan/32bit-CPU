@@ -195,10 +195,10 @@ Example register layout:
 | R1 | TEMP1 | Temporary register |
 | R2 | TEMP2 | Temporary register |
 | R3 | TEMP3 | Temporary register |
-| R4 | TEMP3 | Temporary register |
-| R5 | TEMP3 | Temporary register |
-| R6 | INPUT | Keyboard input |
-| R7 | OUTPUT | ASCII display |
+| R4 | INPUT | Keyboard input |
+| R5 | OUTPUT | ASCII display |
+| R6 | TEMP4 | Temporary register |
+| R7 | TEMP5 | Temporary register |
 
 (Modify according to your design)
 
@@ -217,7 +217,19 @@ Example Program
 24270000
 28000000
 ```
-
+# Load All Value to Your Registers
+ 
+Before executing the instruction sequence, the following registers must be
+initialized with their respective values/addresses:
+ 
+| Register | Value / Address | Description |
+|------|------|-------------|
+| R1 | — | Reserved / used internally by the CPU |
+| R2 | FFFFF1 | Memory-mapped keyboard status address |
+| R3 | 1 | Comparison constant used for key-pressed check |
+| R4 | FFFFF0 | Memory-mapped address holding the ASCII value of the pressed key |
+| R5 | FFFFF2 | Memory-mapped display output address |
+ 
 ---
 
 # Instruction 1
